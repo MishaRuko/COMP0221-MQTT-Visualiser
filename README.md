@@ -57,3 +57,7 @@ The `mac_tag` is the **last** 4 bytes of an AES-128 CMAC calculated over the sha
 ## Adding your MAC address and name
 
 You can add your MAC address and name to the dictionary defined in `mac_dict.py`.
+
+## Acknowledgements
+
+Original code created by Steve Hailes.

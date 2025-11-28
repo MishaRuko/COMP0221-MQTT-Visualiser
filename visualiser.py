@@ -13,6 +13,8 @@ from cryptography.hazmat.primitives.cmac import CMAC
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 
+from mac_dict import DRONE_NAMES
+
 # =============================================================================
 
 # Configuration
@@ -40,22 +42,6 @@ SHARED_KEY_HEX = "2B7E151622A0D2A6ACF7198809CF4F3C"
 
 
 SHARED_KEY = bytes.fromhex(SHARED_KEY_HEX)
-
-
-# Optional: map MAC address to a name for the visualiser
-DRONE_NAMES = {
-    "F0:24:F9:AD:69:F0": "Mikhail",
-    "0C:8B:95:A5:7A:9C": "Kevin 1",
-    "90:15:06:DA:CE:E8": "Kevin 2",
-    "F0:24:F9:AD:6B:44": "Omar",
-    "90:15:06:D5:D4:A0": "Martin",
-    "F0:24:F9:AD:6A:10": "Harry G",
-    "90:15:06:D8:5D:78": "Danila",
-    "90:15:06:D8:5D:2C": "Devyan",
-    "F0:24:F9:AD:6B:40": "Kanav",
-    "F0:24:F9:AD:6B:98": "Khee Ong",
-}
-
 
 # =============================================================================
 

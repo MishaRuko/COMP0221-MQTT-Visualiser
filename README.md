@@ -10,7 +10,7 @@ To run the visualiser, simply execute the Python script. You do not need to do a
 python3 visualiser.py
 ```
 
-# Dependencies
+## Dependencies
 
 Install dependencies:
 
@@ -29,22 +29,22 @@ The visualiser connects to a public MQTT broker with the following details:
 
 The visualiser expects incoming messages on the `flocksim` topic to be JSON objects with the following structure. This format is defined in the COMP0221 Standard document.
 
-```json
+```
 {
-    "version": <integer>,
-    "team_id": <integer>,
-    "node_id": <string>,
-    "seq_number": <integer>,
-    "ts_s": <integer>,
-    "ts_ms": <integer>,
-    "x_mm": <integer>,
-    "y_mm": <integer>,
-    "z_mm": <integer>,
-    "vx_mm_s": <integer>,
-    "vy_mm_s": <integer>,
-    "vz_mm_s": <integer>,
-    "yaw_cd": <integer>,
-    "mac_tag": <string>
+    "version":      <integer>,
+    "team_id":      <integer>,
+    "node_id":      <string>,
+    "seq_number":   <integer>,
+    "ts_s":         <integer>,
+    "ts_ms":        <integer>,
+    "x_mm":         <integer>,
+    "y_mm":         <integer>,
+    "z_mm":         <integer>,
+    "vx_mm_s":      <integer>,
+    "vy_mm_s":      <integer>,
+    "vz_mm_s":      <integer>,
+    "yaw_cd":       <integer>,
+    "mac_tag":      <string>
 }
 ```
 
